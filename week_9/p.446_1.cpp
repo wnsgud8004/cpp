@@ -1,4 +1,4 @@
-//1.이 클래스를 상속하여 Rectangle 클래스를 정의하라. Rectangle에는 가로와 세로 길이를 나타내는 width와 height라는 멤버가 추가되어야 한다.
+//1.클래스를 상속하여 Rectangle 클래스를 정의하라. Rectangle에는 가로와 세로 길이를 나타내는 width와 height라는 멤버가 추가되어야 한다.
 //2.생성자에서 Point의 X, y와 Rectangle의 width, height를 초기화하라. 이때, 멤버 초기화 리스트를 사용하라.
 //3. Rectangle 클래스에서 Point클래스에 있는 draw함수를 재정의 하라. 예를 들어, "2,3에 가로 100 세로 200인 사각형을 그려라"를 출력하면 된다.
 //4.Point 클래스의 protected 키워드를 private로 바꾸면 어떻게 되는지 설명하라.
@@ -27,7 +27,7 @@ private:
     int width, height;
 
 public:
-    // 생성자: Point의 x, y와 Rectangle의 width, height 초기화
+    // 생성자: Point의 x, y를 부모 생성자에서 초기화하고, 나머지 width, height는 본 클래스에서 초기화
     Rectangle(int xx, int yy, int w, int h)
         : Point(xx, yy), width(w), height(h) {}
 
