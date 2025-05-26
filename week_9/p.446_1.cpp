@@ -12,7 +12,7 @@ protected:  // 자식 클래스에서 접근 가능
     int x, y;
 
 public:
-    // 생성자 (초기화 리스트 사용)
+    // 생성자 (초기화 리스트 사용)  
     Point(int xx, int yy) : x(xx), y(yy) {}
 
     // 점 그리기 함수
